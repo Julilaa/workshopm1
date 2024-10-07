@@ -22,3 +22,11 @@ showPage('scan');
 document.getElementById('takePhotoButton').addEventListener('click', () => {
     alert('Capture de la photo du plat');
 });
+
+// Assurer que le chatbot est bien sur chaque page
+function showChatbot() {
+    document.querySelector('#chatbot-bubble').classList.remove('hidden');
+}
+
+// Appelle cette fonction lorsque tu charges une page
+showChatbot();
