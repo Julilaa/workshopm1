@@ -1,13 +1,17 @@
 // script.js
 
-// Fonction pour montrer une page et cacher les autres
 function showPage(pageId) {
-    const pages = document.querySelectorAll('.page');
-    pages.forEach(page => page.classList.remove('active'));
+    // Cacher toutes les pages
+    document.querySelectorAll('.page').forEach(page => {
+        page.classList.add('hidden');
+        page.classList.remove('active');
+    });
 
-    const activePage = document.getElementById(pageId);
-    activePage.classList.add('active');
+    // Afficher la page sélectionnée
+    document.getElementById(pageId).classList.remove('hidden');
+    document.getElementById(pageId).classList.add('active');
 }
+
 
 // Fonction pour afficher/masquer le chatbot
 function toggleChatbot() {

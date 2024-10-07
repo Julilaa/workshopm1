@@ -146,6 +146,83 @@ main {
     background: linear-gradient(145deg, #FF89A2, #FF6585);
 }
 
+/*       */
+/* FORUM */
+/*       */
+
+/* Conteneur du forum */
+.forum-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacement entre les posts */
+    padding: 1em;
+    background-color: #EAF7FA; /* Fond clair pour contraster */
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Chaque post du forum */
+.forum-post {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.forum-post h3 {
+    color: #34495E; /* Couleur pour les titres */
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+}
+
+.forum-post p {
+    color: #7F8C8D;
+    font-size: 1em;
+    margin: 0 0 10px 0;
+}
+
+.post-author {
+    font-size: 0.9em;
+    color: #95A5A6;
+}
+
+/* Bouton pour ajouter un nouveau post */
+#newPostButton {
+    background: linear-gradient(145deg, #76D4E1, #49C3D0);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#newPostButton:hover {
+    transform: scale(1.05);
+    background: linear-gradient(145deg, #5FC8D3, #3DB3BE);
+}
+
+
+/*            */
+/* HISTORIQUE */
+/*            */
+
+/* Historique et graphiques */
+#history .graph-container {
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
 /*         */
 /* CHATBOT */
 /*         */
@@ -197,21 +274,4 @@ main {
     padding: 15px;
     font-size: 1em;
     color: #34495E;
-}
-
-/*            */
-/* HISTORIQUE */
-/*            */
-
-/* Historique et graphiques */
-#history .graph-container {
-    background-color: white;
-    border-radius: 20px;
-    padding: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    margin-bottom: 20px;
-}
-
-.hidden {
-    display: none;
 }
