@@ -26,10 +26,17 @@
         <!-- Page 1: Scan photo -->
         <section id="scan" class="page active">
             <h2>Scanner le plat</h2>
-            <div class="camera-container">
-                <button id="takePhotoButton">📷 Prendre une photo</button>
+
+            <!-- Cadre pour l'aperçu de la caméra -->
+            <div id="camera-preview">
+                Aperçu de la caméra
             </div>
-            <button onclick="showPage('history')">Voir l'historique et l'analyse</button>
+
+            <!-- Bouton Prendre une photo -->
+            <button id="takePhotoButton">📷 Prendre une photo</button>
+
+            <!-- Bouton pour voir l'historique et l'analyse -->
+            <button id="showResultsButton" onclick="showPage('history')">Voir l'historique et l'analyse</button>
         </section>
 
         <!-- Page 2: Forum, recettes -->

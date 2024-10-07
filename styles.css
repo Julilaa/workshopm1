@@ -1,5 +1,9 @@
 /* styles.css - Design moderne et épuré inspiré par l'exemple fourni */
 
+/*      */
+/* BODY */
+/*      */
+
 /* Corps général */
 body {
     font-family: 'Arial', sans-serif;
@@ -13,6 +17,10 @@ body {
     margin: auto;
 }
 
+/*         */
+/* EN-TETE */
+/*         */
+
 /* En-tête */
 header {
     background-color: #A3D8E5;
@@ -24,6 +32,10 @@ header {
     border-radius: 15px;
 }
 
+/*      */
+/* MAIN */
+/*      */
+
 /* Contenu principal */
 main {
     flex-grow: 1;
@@ -33,6 +45,10 @@ main {
     border-radius: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Légère ombre */
 }
+
+/*        */
+/* NAVBAR */
+/*        */
 
 /* Navigation en bas avec des boutons ronds */
 .bottom-nav {
@@ -72,6 +88,28 @@ main {
     background: linear-gradient(145deg, #87CBD6, #61A5B1);
 }
 
+/*        */
+/* CAMERA */
+/*        */
+
+/* Cadre pour l'aperçu de la caméra */
+#camera-preview {
+    width: 100%; /* Ajusté à la largeur de l'écran */
+    max-width: 320px; /* Taille maximale */
+    height: 240px; /* Hauteur pour créer un rectangle */
+    background-color: #EAF7FA; /* Fond bleu clair pour simuler l'aperçu de la caméra */
+    border-radius: 20px; /* Bordures arrondies */
+    margin: 0 auto 20px auto; /* Centré avec un espace en bas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #A3D8E5; /* Bordure bleue claire */
+    color: #34495E; /* Couleur du texte */
+    font-size: 1.2em;
+    text-align: center;
+}
+
 /* Bouton de capture d'image */
 #takePhotoButton {
     background: linear-gradient(145deg, #76D4E1, #49C3D0);
@@ -82,17 +120,41 @@ main {
     font-size: 1.2em;
     transition: background-color 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centré horizontalement */
+    display: block; /* Convertir en block pour centrer facilement */
 }
 
 #takePhotoButton:hover {
     background: linear-gradient(145deg, #5FC8D3, #3DB3BE);
 }
 
+/* Bouton pour afficher les résultats */
+#showResultsButton {
+    background: linear-gradient(145deg, #FFB3C1, #FF89A2); /* Style de dégradé rose */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Centré avec un espace au-dessus */
+    display: block;
+}
+
+#showResultsButton:hover {
+    background: linear-gradient(145deg, #FF89A2, #FF6585);
+}
+
+/*         */
+/* CHATBOT */
+/*         */
+
 /* Chatbot intégré à l'intérieur de l'application */
 #chatbot-bubble {
     position: absolute; /* Fixé à l'intérieur du conteneur de l'application */
     bottom: 100px; /* Ajusté pour être juste au-dessus de la barre de navigation */
-    /* right: 20px; Aligné avec le bord droit */
+    right: 20px; /*Aligné avec le bord droit */
     background: linear-gradient(145deg, #A3D8E5, #78B9C9);
     color: white;
     padding: 15px;
@@ -112,7 +174,7 @@ main {
 #chatbot-window {
     position: fixed;
     bottom: 150px;
-    /* right: 20px; */
+    right: 20px;
     width: 280px;
     background-color: white;
     border-radius: 20px;
@@ -136,6 +198,10 @@ main {
     font-size: 1em;
     color: #34495E;
 }
+
+/*            */
+/* HISTORIQUE */
+/*            */
 
 /* Historique et graphiques */
 #history .graph-container {
