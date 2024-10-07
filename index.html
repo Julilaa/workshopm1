@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valou</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Valou</h1>
+    </header>
+
+    <!-- Navigation avec des icônes en bas -->
+    <nav class="bottom-nav">
+        <ul>
+            <li><button onclick="showPage('scan')">📷 Scan</button></li>
+            <li><button onclick="showPage('forum')">💬 Forum</button></li>
+            <li><button onclick="showPage('history')">📊 Historique</button></li>
+            <li><button onclick="showPage('profile')">👤 Profil</button></li>
+        </ul>
+    </nav>
+
+    <!-- Contenu principal, pages affichées/masquées -->
+    <main id="content">
+        <!-- Page 1: Scan photo -->
+        <section id="scan" class="page active">
+            <h2>Scanner le plat</h2>
+            <div class="camera-container">
+                <button id="takePhotoButton">📷 Prendre une photo</button>
+            </div>
+            <button onclick="showPage('history')">Voir l'historique et l'analyse</button>
+        </section>
+
+        <!-- Page 2: Forum, recettes -->
+        <section id="forum" class="page hidden">
+            <h2>Forum et recettes pour bébé</h2>
+            <p>Connectez-vous avec d'autres parents et des professionnels.</p>
+        </section>
+
+        <!-- Page 3: Historique et analyses -->
+        <section id="history" class="page hidden">
+            <h2>Historique et analyse nutritive</h2>
+            <p>Analyse de votre dernier plat scanné...</p>
+        </section>
+
+        <!-- Page 4: Profil -->
+        <section id="profile" class="page hidden">
+            <h2>Profil</h2>
+            <p>Gérez les informations de votre enfant ici.</p>
+        </section>
+    </main>
+
+    <!-- Bulle de discussion pour le chatbot "Infant Insighter" -->
+    <div id="chatbot-bubble" onclick="toggleChatbot()">
+        💬 Infant Insighter
+    </div>
+
+    <!-- Fenêtre de discussion du chatbot (cachée par défaut) -->
+    <div id="chatbot-window" class="hidden">
+        <div id="chatbot-header">
+            <h3>Infant Insighter</h3>
+            <button onclick="toggleChatbot()">✖</button>
+        </div>
+        <div id="chatbot-content">
+            <p>Bonjour ! Comment puis-je vous aider aujourd'hui ?</p>
+            <!-- Contenu du chatbot ici -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
