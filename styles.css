@@ -92,7 +92,7 @@ main {
 #chatbot-bubble {
     position: absolute; /* Fixé à l'intérieur du conteneur de l'application */
     bottom: 100px; /* Ajusté pour être juste au-dessus de la barre de navigation */
-    right: 20px; /* Aligné avec le bord droit */
+    /* right: 20px; Aligné avec le bord droit */
     background: linear-gradient(145deg, #A3D8E5, #78B9C9);
     color: white;
     padding: 15px;
@@ -112,7 +112,7 @@ main {
 #chatbot-window {
     position: fixed;
     bottom: 150px;
-    right: 20px;
+    /* right: 20px; */
     width: 280px;
     background-color: white;
     border-radius: 20px;
